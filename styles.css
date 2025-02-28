@@ -1,0 +1,127 @@
+/* Page Layout */
+
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    /* margin: 0 1rem 0 1rem; */
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .library {
+    /* background-color: red; */
+    justify-items: center;
+
+  }
+
+  .side-bar {
+    justify-items: left;
+    min-width: 20%;
+    margin-left: 2.5rem;
+
+  }
+
+  .title {
+
+  }
+
+/* Library */
+  
+  #book-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap automatically */
+    gap: 20px; /* Space between cards */
+    max-width: 900px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 20px); /* Ensures three cards per row with spacing */
+    min-width: 225px;
+    text-align: center;
+  }
+
+  .btn.card {
+    background-color: rgba(255, 0, 0, 0.509);
+    justify-self: center;
+  }
+
+  .btn.card:hover {
+    box-shadow: 1px 1px 1px 1px rgb(189, 184, 184);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .cardStatus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between cards */
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+/* Add a Book */
+
+.form-container {
+    background-color: white;
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.formText {
+    font-size: 2em;
+    
+}
+
+#book-form {
+    min-width: 25%;
+
+} 
+
+.form-item {
+    font-size: 1rem;
+    opacity: 75%;
+    border-radius: 3px;
+    padding: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+.status {
+    display: inline !important;
+}
+
+
+
+.btn {
+    width: 12.5em;
+    padding: 5px;
+    margin-top: 1rem;
+    /* background-color: blue; */
+    border-radius: 3px;
+    border-width: 1px;
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+}
